@@ -50,3 +50,13 @@ wss.broadcast = function broadcast(data) {
 };
 /** End Websocket **/
 
+/** Start DB **/
+const sqlite = require('sqlite3');
+const db = new sqlite.Database(':memory:');
+
+db.serialize(() => {
+    
+});
+
+/** End DB **/
+
